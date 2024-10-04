@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Random</title>
+  <link href="styx.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        [data-state="no-js"] . disclosure__content {
+            display: none;
+        }
+    </style>
+ <div class="disclosure js-disclosure" data-state="no-js">
+     <button
+     aria-expanded="false"; 
+     class="disclosure__button js-disclosure-btn"
+        aria-controls="content"
+        disabled
+    title="This button becomes functional once JavaScript is active"
+     >
+     Content
+         <svg
+         class="disclosure__icon"
+         aria-hidden="true"
+         focusable="false"
+         xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 10 6"><polygon points="8.97 0 5.01 3.9 1 0.03 0 1.03 4.96 6 10 1.08 8.97 0"></polygon></svg>
+     </button>
+     <div class="disclosure__content" id="content"></div>  
+     <p>Revealed!</p>
+     </div>
+ </div> 
+ <noscript>
+     <style>
+         [data-state="no-js"] .disclosure__content {
+             display: block;
+         }
+     </style>
+ </noscript>
+  <script src="scripr.js"></script>
+</body>
+
+</html>
