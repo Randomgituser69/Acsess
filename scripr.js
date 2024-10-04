@@ -1,7 +1,7 @@
 const disclosures = document.querySelectorAll('js-disclosure') 
 function toggleDisclosure() {
 const isExpanded = this.getAttribute('aria-expanded') ===    'true'
-this.setAttribute,('aria-expanded', !isExpanded)
+this.setAttribute('aria-expanded', !isExpanded)
 }
 function init() {
     if(!disclosures.length) {
