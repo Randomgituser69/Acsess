@@ -1,4 +1,4 @@
-const disclosures = document.querySelectorAll('js-disclosure') 
+const disclosures = document.querySelectorAll('.js-disclosure') 
 function toggleDisclosure() {
 const isExpanded = this.getAttribute('aria-expanded') === 'true';
 this.setAttribute('aria-expanded', !isExpanded)
@@ -9,7 +9,7 @@ function init() {
     }
     disclosures.forEach(component => {
         component.dataset.state ="ready"
-        const disclosureBtn = component.querySelectorAll('js-disclosure-btn'); 
+        const disclosureBtn = component.querySelectorAll('.js-disclosure-btn'); 
         disclosureBtn.forEach(btns => {
             btns.removeAttribute('title')
             btns.removeAttribute('disabled') 
@@ -17,4 +17,4 @@ function init() {
        })
     })
 }
-export default init;
+init()
