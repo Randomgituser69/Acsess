@@ -1,6 +1,6 @@
 const disclosures = document.querySelectorAll('js-disclosure') 
 function toggleDisclosure() {
-const isExpanded = this.getAttribute('aria-expanded') ===    'true'
+const isExpanded = this.getAttribute('aria-expanded') === 'true';
 this.setAttribute('aria-expanded', !isExpanded)
 }
 function init() {
@@ -8,7 +8,7 @@ function init() {
         return
     }
     disclosures.forEach(component => {
-        compontent.dataset.state ="ready"
+        component.dataset.state ="ready"
         const disclosureBtn = component.querySelectorAll('js-disclosure-btn'); 
         disclosureBtn.forEach(btns => {
             btns.removeAttribute('title')
